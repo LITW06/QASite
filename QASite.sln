@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QASite.Web", "QASite.Web\QASite.Web.csproj", "{71A63F35-8030-4320-9D01-F5EF26347181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QASite.Data", "QASite.Data\QASite.Data.csproj", "{DBA3FF26-25E0-4186-93E1-C1F938DF3F45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71A63F35-8030-4320-9D01-F5EF26347181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A63F35-8030-4320-9D01-F5EF26347181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A63F35-8030-4320-9D01-F5EF26347181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A63F35-8030-4320-9D01-F5EF26347181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA3FF26-25E0-4186-93E1-C1F938DF3F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA3FF26-25E0-4186-93E1-C1F938DF3F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA3FF26-25E0-4186-93E1-C1F938DF3F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA3FF26-25E0-4186-93E1-C1F938DF3F45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F065442-4001-4AE6-9CDE-845D04900F9E}
+	EndGlobalSection
+EndGlobal

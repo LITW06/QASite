@@ -1,0 +1,29 @@
+﻿@using QASite.Data
+@model IEnumerable<QASite.Data.Question>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        @foreach (var question in Model)
+        {
+            <div class="well">
+                <h4>
+                    <a href="/questions/viewquestion?id=@question.Id">
+                        @question.Title
+                    </a>
+                </h4>
+                <div>
+                    <span>Tags:</span>
+                    @foreach (var qt in question.QuestionsTags)
+                    {
+                        <span class="label label-primary">@qt.Tag.Name</span>
+                    }
+                </div>
+                <div style="margin-top: 10px;">
+                    @(question.Text.Length < 200 ? question.Text : (question.Text.Substring(0, 200) + "..."))
+                </div>
+                <span>Likes: @question.Likes.Count</span>
+            </div>
+        }
+    </div>
+</div>
+
