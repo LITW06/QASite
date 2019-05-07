@@ -20,6 +20,7 @@ namespace QASite.Data
         {
             using (var ctx = new QASiteContext(_connectionString))
             {
+
                 ctx.Questions.Add(question);
                 foreach (string tag in tags)
                 {
@@ -52,6 +53,7 @@ namespace QASite.Data
                     .Include(q => q.User)
                     .ThenInclude(q => q.LikedQuestions)
                     .Include(q => q.Answers)
+                    .ThenInclude(a => a.User)
                     .Include(q => q.Likes)
                     .Include(u => u.QuestionsTags)
                     .ThenInclude(qt => qt.Tag)
@@ -65,8 +67,6 @@ namespace QASite.Data
             {
                 return context.Questions
                     .Include(q => q.Answers)
-                    .ThenInclude(a => a.User)
-                    .Include(q => q.User)
                     .Include(q => q.Likes)
                     .Include(q => q.QuestionsTags)
                     .ThenInclude(q => q.Tag)
